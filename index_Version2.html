@@ -10,28 +10,27 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">George</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div class="nav-container">
+            <a href="#" class="logo">George</a>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Robotics Student | AI/ML Developer | Innovator</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>George</h1>
+            <p class="subtitle">Robotics Engineer | AI/ML Developer | Innovator</p>
+            <p class="tagline">Building intelligent systems and autonomous robots</p>
+            <div class="social-links">
+                <a href="https://github.com/george-1-0-1" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gd117/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </section>
@@ -41,35 +40,67 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate robotics student with a strong background in artificial intelligence and machine learning development. My expertise spans robotics development, AI/ML model creation, and innovative problem-solving.</p>
-                    <p>Currently, I focus on:</p>
-                    <ul>
-                        <li>Developing intelligent robotic systems</li>
-                        <li>Machine learning model optimization</li>
-                        <li>Computer vision applications</li>
-                        <li>Autonomous navigation systems</li>
-                    </ul>
-                </div>
-                <div class="about-links">
-                    <a href="https://github.com/george-1-0-1" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/gd117/" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
+                <p>I'm a robotics student with a deep passion for artificial intelligence and machine learning. My expertise spans from developing autonomous systems and swarm robotics to implementing secure multi-agent systems and AI-powered applications.</p>
+                <p>With hands-on experience in ROS 2, distributed systems, machine learning, and cybersecurity, I focus on creating innovative solutions that address real-world challenges.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects will be loaded here from GitHub API -->
-                <div class="loading">Loading projects...</div>
+            <div class="projects-grid">
+                <!-- Robotics Projects -->
+                <div class="project-card">
+                    <h3>ROS2_DDS_Swarm</h3>
+                    <p class="tech-stack">MATLAB • ROS 2 • DDS</p>
+                    <p>Novel approach on implementing swarm robotics for large-scale surveillance using ROS 2 and DDS. A case study on distributed robotic systems.</p>
+                    <a href="https://github.com/george-1-0-1/ROS2_DDS_Swarm" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- AI/Security Projects -->
+                <div class="project-card">
+                    <h3>SecureMAS</h3>
+                    <p class="tech-stack">Python • Multi-Agent Systems • Security</p>
+                    <p>Secure Multi-Agent System with Quantum Key Distribution (QKD), Anomaly Detection, and Byzantine Fault Tolerant Consensus protocols.</p>
+                    <a href="https://github.com/george-1-0-1/SecureMAS" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- ML/Authentication -->
+                <div class="project-card">
+                    <h3>QR_Auth</h3>
+                    <p class="tech-stack">Python • Deep Learning • Machine Learning</p>
+                    <p>A machine learning and deep learning-based system for detecting counterfeit QR codes, enhancing security for authentication systems.</p>
+                    <a href="https://github.com/george-1-0-1/QR_Auth" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- AI Assistant -->
+                <div class="project-card">
+                    <h3>AI-PDF-Reader</h3>
+                    <p class="tech-stack">Python • LangChain • FAISS • Ollama</p>
+                    <p>AI-powered document Q&A assistant using Streamlit, LangChain, FAISS, and locally hosted Ollama LLM for intelligent document interaction.</p>
+                    <a href="https://github.com/george-1-0-1/AI-PDF-Reader" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- Time Series Prediction -->
+                <div class="project-card">
+                    <h3>InsuPred</h3>
+                    <p class="tech-stack">Python • Time Series • Machine Learning</p>
+                    <p>Experimental time series insulin prediction using the HUPA Diabetes Dataset. Advanced ML techniques for healthcare predictions.</p>
+                    <a href="https://github.com/george-1-0-1/InsuPred" target="_blank" class="btn">View Project</a>
+                </div>
+
+                <!-- Wearable Data Analysis -->
+                <div class="project-card">
+                    <h3>Wearable Data Analysis</h3>
+                    <p class="tech-stack">Python • Data Analysis • Jupyter</p>
+                    <p>Use of wearable devices to collect and analyze swell data for research applications, including data processing and visualization.</p>
+                    <a href="https://github.com/george-1-0-1/Wearable-Data" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            <div class="more-projects">
+                <p>Explore more projects on <a href="https://github.com/george-1-0-1" target="_blank">GitHub</a></p>
             </div>
         </div>
     </section>
@@ -77,24 +108,35 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <h2>Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Robotics</h3>
+                    <h3>Robotics & Systems</h3>
                     <ul>
-                        <li>ROS (Robot Operating System)</li>
-                        <li>Arduino & Microcontrollers</li>
-                        <li>Motion Planning</li>
-                        <li>Sensor Integration</li>
+                        <li>ROS 2</li>
+                        <li>DDS (Data Distribution Service)</li>
+                        <li>Swarm Robotics</li>
+                        <li>Autonomous Systems</li>
+                        <li>Multi-Agent Systems</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>AI/ML</h3>
+                    <h3>AI & Machine Learning</h3>
                     <ul>
-                        <li>Deep Learning (TensorFlow, PyTorch)</li>
-                        <li>Computer Vision (OpenCV)</li>
-                        <li>NLP Models</li>
-                        <li>Model Optimization</li>
+                        <li>Deep Learning</li>
+                        <li>TensorFlow</li>
+                        <li>Time Series Analysis</li>
+                        <li>LLMs & LangChain</li>
+                        <li>FAISS Vector Search</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Security & Cryptography</h3>
+                    <ul>
+                        <li>Quantum Key Distribution</li>
+                        <li>Byzantine Consensus</li>
+                        <li>Anomaly Detection</li>
+                        <li>QR Code Authentication</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -102,17 +144,9 @@
                     <ul>
                         <li>Python</li>
                         <li>C++</li>
-                        <li>JavaScript</li>
                         <li>MATLAB</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Frameworks</h3>
-                    <ul>
-                        <li>Git/GitHub</li>
-                        <li>Docker</li>
+                        <li>JavaScript</li>
                         <li>Jupyter Notebooks</li>
-                        <li>VS Code</li>
                     </ul>
                 </div>
             </div>
@@ -122,26 +156,22 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always interested in hearing about new projects and opportunities.</p>
-                <div class="contact-links">
-                    <a href="https://github.com/george-1-0-1" class="contact-btn" target="_blank">
-                        <i class="fab fa-github"></i> View GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/gd117/" class="contact-btn" target="_blank">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                    </a>
-                </div>
+            <h2>Let's Connect</h2>
+            <p>I'm always interested in discussing robotics, AI/ML projects, and innovative solutions.</p>
+            <div class="contact-links">
+                <a href="https://github.com/george-1-0-1" target="_blank" class="contact-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/gd117/" target="_blank" class="contact-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 George. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 George. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
