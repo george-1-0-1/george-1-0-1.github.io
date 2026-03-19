@@ -1,0 +1,18 @@
+{
+  "name": "george-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website - Robotics & AI/ML Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "robotics",
+    "ai",
+    "ml",
+    "github"
+  ],
+  "author": "George",
+  "license": "MIT"
+}
