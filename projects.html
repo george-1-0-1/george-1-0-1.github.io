@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | George David - Robotics & AI Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><i class="fas fa-robot"></i> George David</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>My Projects</h1>
+            <p>Showcasing work across robotics, AI, ML, and autonomous systems</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-detailed">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Project 1: Swarm Robotics -->
+                <div class="detailed-project-card" id="swarm" data-category="research">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>Swarm Robotics for Large-Scale Surveillance</h2>
+                            <p class="project-date">2024 | Research Project</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1JaySulGetNyYJojpZN2S-wCEsHbUGwxh/view?usp=sharing" target="_blank" class="link-btn">
+                                <i class="fas fa-file-pdf"></i> Project Report
+                            </a>
+                            <a href="https://github.com/george-1-0-1" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                Designed and implemented algorithms and communication protocols enabling coordinated swarm robots 
+                                to perform large-scale surveillance. The system maintains formation, shares real-time sensory data, 
+                                and dynamically reassigns roles based on mission requirements.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">ROS 2</span>
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">DDS</span>
+                                <span class="tech-item">Gazebo</span>
+                                <span class="tech-item">MATLAB/Simulink</span>
+                                <span class="tech-item">Machine Learning</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Distributed peer-to-peer communication protocols</li>
+                                <li>Formation control algorithms</li>
+                                <li>Real-time sensory data fusion</li>
+                                <li>Dynamic role reassignment based on mission analysis</li>
+                                <li>Failure-prone environment resilience</li>
+                            </ul>
+
+                            <h3>Impact</h3>
+                            <p>
+                                Presented at the International Conference on Electronics, AI and Computing (2025). 
+                                This research contributes to the advancement of coordinated autonomous systems for real-world applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: AI PDF Reader -->
+                <div class="detailed-project-card" id="ai-pdf" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>AI PDF Reader with Voice & Text Interface</h2>
+                            <p class="project-date">2025 | LLM & NLP Project</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/george-1-0-1/AI-PDF-Reader" target="_blank" class="link-btn">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                            <a href="https://github.com/george-1-0-1/AI-PDF-Reader/blob/main/README.md" target="_blank" class="link-btn">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                An intelligent PDF assistant powered by large language models, allowing users to interact with documents 
+                                through both text and voice input. Features include question-answering, summarization, speech recognition, 
+                                and text-to-speech synthesis.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">Streamlit</span>
+                                <span class="tech-item">LangChain</span>
+                                <span class="tech-item">FAISS</span>
+                                <span class="tech-item">sentence-transformers</span>
+                                <span class="tech-item">Ollama</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>PDF document parsing and text extraction</li>
+                                <li>Voice input with automatic speech recognition</li>
+                                <li>Context-aware question answering using embeddings</li>
+                                <li>Intelligent document summarization</li>
+                                <li>Text-to-speech output</li>
+                                <li>Multi-modal interaction support</li>
+                            </ul>
+
+                            <h3>Use Cases</h3>
+                            <p>
+                                Research paper analysis, document review automation, accessibility enhancement, 
+                                knowledge extraction from technical manuals and reports.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Quantum Secure Consensus -->
+                <div class="detailed-project-card" id="quantum" data-category="research">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>Quantum-Secure Consensus for Multi-Agent Systems</h2>
+                            <p class="project-date">2025 | Cybersecurity & Robotics</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1syPukQkPQrdRCRH3rHLQDZ_B5z-l40_q/view?usp=sharing" target="_blank" class="link-btn">
+                                <i class="fas fa-file-pdf"></i> Project Report
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                Developing secure consensus algorithms and communication protocols for multi-agent robotic systems, 
+                                with emphasis on defense against Denial-of-Service (DoS) attacks. Integrates quantum cryptography 
+                                with Byzantine Fault Tolerant (BFT) consensus mechanisms.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">Qiskit</span>
+                                <span class="tech-item">Quantum Key Distribution</span>
+                                <span class="tech-item">AES/RSA Encryption</span>
+                                <span class="tech-item">BFT Consensus</span>
+                                <span class="tech-item">ML Anomaly Detection</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Quantum-resistant cryptographic protocols</li>
+                                <li>Byzantine Fault Tolerant consensus algorithms</li>
+                                <li>DoS attack detection and mitigation</li>
+                                <li>Adaptive control strategies</li>
+                                <li>Machine learning-based anomaly detection</li>
+                                <li>Secure multi-agent coordination</li>
+                            </ul>
+
+                            <h3>Applications</h3>
+                            <p>
+                                Secure autonomous vehicle networks, military robotics, critical infrastructure monitoring, 
+                                decentralized drone swarms operating in hostile environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Deep RL Robot Navigation -->
+                <div class="detailed-project-card" id="rl-nav" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>Deep Reinforcement Learning for Robot Navigation</h2>
+                            <p class="project-date">2024 | Reinforcement Learning & Robotics</p>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                Trained and evaluated neural network policies for robot navigation across diverse terrains and 
+                                scenarios using deep reinforcement learning. Implemented TD3 (Twin Delayed DDPG) for continuous 
+                                control optimization.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">ROS</span>
+                                <span class="tech-item">PyTorch</span>
+                                <span class="tech-item">Gazebo</span>
+                                <span class="tech-item">TD3 Algorithm</span>
+                                <span class="tech-item">TensorBoard</span>
+                                <span class="tech-item">RViz</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>TD3 deep reinforcement learning algorithm implementation</li>
+                                <li>Multi-terrain navigation training</li>
+                                <li>Real-time visualization with RViz and TensorBoard</li>
+                                <li>Continuous action space optimization</li>
+                                <li>Sim-to-real transfer potential</li>
+                            </ul>
+
+                            <h3>Results</h3>
+                            <p>
+                                Successfully trained robot agents to navigate through complex environments with obstacles, 
+                                achieving robust performance across multiple terrain types and weather conditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Customer Emotion Detection -->
+                <div class="detailed-project-card" id="emotion" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>Customer Feedback via Emotion Detection</h2>
+                            <p class="project-date">2024 | Computer Vision & ML</p>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-face-smile"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                A real-time customer feedback collection system using emotion detection algorithms and machine learning models. 
+                                Applicable in retail stores, hotels, and service centers for automated customer satisfaction analysis.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Machine Learning</span>
+                                <span class="tech-item">Flutter</span>
+                                <span class="tech-item">Docker</span>
+                                <span class="tech-item">Keras</span>
+                                <span class="tech-item">Kaggle</span>
+                                <span class="tech-item">TensorFlow</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Real-time facial emotion recognition</li>
+                                <li>Multi-emotion classification (happy, sad, angry, etc.)</li>
+                                <li>Cross-platform mobile deployment</li>
+                                <li>Containerized backend with Docker</li>
+                                <li>Analytics dashboard for feedback trends</li>
+                            </ul>
+
+                            <h3>Business Impact</h3>
+                            <p>
+                                Enables businesses to collect unbiased customer feedback, identify service improvement areas, 
+                                and track customer satisfaction trends in real-time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: 3-DOF Robotic Manipulator -->
+                <div class="detailed-project-card" id="manipulator" data-category="robotics">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>3-DOF Robotic Manipulator</h2>
+                            <p class="project-date">2023 | Robotics & Kinematics</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1wjyYl5U7iAXNN4TRG_B-xOi-lQ4ixXSm/view?usp=sharing" target="_blank" class="link-btn">
+                                <i class="fas fa-file-pdf"></i> Project Report
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                Designed and built a 3-DOF robotic manipulator for pick-and-place operations using forward and 
+                                inverse kinematics. The arm closely mimics human arm movements for basic industrial applications.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Arduino</span>
+                                <span class="tech-item">Robot Kinematics</span>
+                                <span class="tech-item">Embedded Systems</span>
+                                <span class="tech-item">RC Control</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Forward kinematics implementation</li>
+                                <li>Inverse kinematics calculation</li>
+                                <li>RC wireless control</li>
+                                <li>Servo motor synchronization</li>
+                                <li>Pick-and-place task automation</li>
+                            </ul>
+
+                            <h3>Applications</h3>
+                            <p>
+                                Industrial pick-and-place operations, object sorting, educational robotics demonstrations, 
+                                and research in human-like robotic manipulation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Driver Restlessness Detection -->
+                <div class="detailed-project-card" id="driver" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>Driver Restlessness Detection System</h2>
+                            <p class="project-date">2023 | Computer Vision & IoT</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1wwl7wQ3cpj4u1wVpwqIWsV5BqMN9ir1L/view?usp=drivesdk" target="_blank" class="link-btn">
+                                <i class="fas fa-file-pdf"></i> Project Report
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-car"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                A real-time monitoring system that detects driver emotional state and physical condition through 
+                                ML-based emotion detection and biometric sensors. Provides alerts for dangerous driver states.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Machine Learning</span>
+                                <span class="tech-item">Computer Vision</span>
+                                <span class="tech-item">Arduino</span>
+                                <span class="tech-item">Sensors (Heart Rate)</span>
+                                <span class="tech-item">TensorFlow</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Real-time emotion recognition from facial expressions</li>
+                                <li>Heart rate monitoring via wearable sensors</li>
+                                <li>ML-based driver state classification</li>
+                                <li>Alert generation for risky states</li>
+                                <li>Data logging for analysis</li>
+                            </ul>
+
+                            <h3>Safety Impact</h3>
+                            <p>
+                                Helps prevent accidents caused by driver fatigue, stress, or emotional distress. 
+                                Potential applications in fleet management and autonomous vehicle safety systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: ChatMate AI -->
+                <div class="detailed-project-card" id="chatmate" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>ChatMate AI - Personal Chatbot</h2>
+                            <p class="project-date">2025 | LLM & NLP (Ongoing)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                An AI-powered personal chatbot that provides everyday conversation support. Features include 
+                                contextual understanding, multiple LLM backend support, and multi-platform deployment.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">FastAPI</span>
+                                <span class="tech-item">React/Flutter</span>
+                                <span class="tech-item">LangChain</span>
+                                <span class="tech-item">FAISS</span>
+                                <span class="tech-item">OpenAI/Mistral</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Natural language understanding and generation</li>
+                                <li>Multi-model LLM support (GPT, Mistral, etc.)</li>
+                                <li>Context-aware conversation tracking</li>
+                                <li>Speech recognition and synthesis</li>
+                                <li>Cross-platform deployment (Web, Mobile)</li>
+                            </ul>
+
+                            <h3>Status</h3>
+                            <p>Currently in active development with focus on improving context retention and response quality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Raven - AI Research Companion -->
+                <div class="detailed-project-card" id="raven" data-category="ai-ml">
+                    <div class="project-header">
+                        <div class="project-title-section">
+                            <h2>Raven: AI Research Companion</h2>
+                            <p class="project-date">2025 | LLM & Web Scraping (Ongoing)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="image-placeholder-large">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <h3>Overview</h3>
+                            <p>
+                                An autonomous AI-powered research assistant that automates literature search, paper extraction, 
+                                multi-model summarization, and research roadmap generation for academic and professional research.
+                            </p>
+
+                            <h3>Technical Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">Playwright</span>
+                                <span class="tech-item">BeautifulSoup</span>
+                                <span class="tech-item">GPT-4/Claude/Mixtral</span>
+                                <span class="tech-item">FAISS</span>
+                                <span class="tech-item">ChromaDB</span>
+                            </div>
+
+                            <h3>Key Features</h3>
+                            <ul class="features-list">
+                                <li>Automated web scraping for research papers</li>
+                                <li>Multi-model LLM summarization</li>
+                                <li>Intelligent research roadmap generation</li>
+                                <li>Citation tracking and reference management</li>
+                                <li>Real-time research trend analysis</li>
+                            </ul>
+
+                            <h3>Status</h3>
+                            <p>Active development with focus on improving scraping accuracy and summarization quality across multiple domains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Interested in Collaboration?</h2>
+            <p>Let's work together on innovative robotics and AI projects</p>
+            <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>George David</h4>
+                <p>Robotics Engineer & AI Developer</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="footer-socials">
+                    <a href="https://github.com/george-1-0-1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gd117/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:georgedavid.uk1@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 George David. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
