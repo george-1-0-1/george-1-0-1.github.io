@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact George David | Robotics & AI Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><i class="fas fa-robot"></i> George David</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Get In Touch</h1>
+            <p>Let's discuss robotics, AI, and exciting opportunities</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p class="section-intro">
+                        I'm always open to discussing new projects, collaboration opportunities, or sharing ideas about robotics and AI. 
+                        Feel free to reach out through any of the following channels:
+                    </p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:georgedavid.uk1@gmail.com">georgedavid.uk1@gmail.com</a></p>
+                                <p class="info-note">Primary contact method</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+447887257761">+44 7887 257761</a> (UK)</p>
+                                <p><a href="tel:+971508434730">+971 50 8434 730</a> (UAE)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>GitHub</h3>
+                                <p><a href="https://github.com/george-1-0-1" target="_blank">github.com/george-1-0-1</a></p>
+                                <p class="info-note">Check out my repositories and contributions</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/gd117/" target="_blank">linkedin.com/in/gd117/</a></p>
+                                <p class="info-note">Connect with me professionally</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Location</h3>
+                                <p>Bristol, United Kingdom</p>
+                                <p class="info-note">Currently based at University of Bristol</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-socials">
+                        <h3>Connect on Social Media</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/george-1-0-1" target="_blank" class="social-card">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gd117/" target="_blank" class="social-card">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:georgedavid.uk1@gmail.com" class="social-card">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+44 1234567890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="research">Research Inquiry</option>
+                                <option value="internship">Internship/Job Opportunity</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your inquiry..." rows="6"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the privacy policy</label>
+                            <span class="error-message" id="privacyError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        <p class="form-note">* Required fields. I'll get back to you as soon as possible.</p>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability Section -->
+    <section class="availability-section">
+        <div class="container">
+            <h2>Availability</h2>
+            <div class="availability-grid">
+                <div class="availability-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Current Role</h3>
+                    <p>AORT Engineer at Bristol SEDs</p>
+                    <p class="availability-note">Full-time position (Nov 2025 - Ongoing)</p>
+                </div>
+
+                <div class="availability-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>M.Sc Robotics at University of Bristol</p>
+                    <p class="availability-note">Sept 2025 - Ongoing</p>
+                </div>
+
+                <div class="availability-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Response Time</h3>
+                    <p>Usually within 24-48 hours</p>
+                    <p class="availability-note">Weekdays are preferred</p>
+                </div>
+
+                <div class="availability-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Open To</h3>
+                    <p>Collaboration & Consulting</p>
+                    <p class="availability-note">Research projects & partnerships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What areas are you most interested in?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            I'm passionate about robotics, AI/ML systems, autonomous vehicles, swarm robotics, 
+                            cybersecurity in robotics, and human-robot interaction. I'm particularly interested in projects 
+                            that combine multiple disciplines.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I use your code or research?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Most of my code is available on GitHub under open-source licenses. Research publications 
+                            are available on ResearchGate. For specific usage or licensing questions, please contact me directly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer consulting services?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Yes, I'm open to consulting on robotics and AI projects. Current commitments may limit 
+                            availability, but I'm happy to discuss possibilities. Contact me for details.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I collaborate with you?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            There are many ways to collaborate: joint research projects, code contributions, 
+                            technical partnerships, or mentorship. Feel free to reach out with your specific idea!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your tech stack?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Python (primary), C/C++, ROS 1&2, PyTorch, TensorFlow, Docker, AWS/GCP, and many more. 
+                            Check the "About" page for a comprehensive list of skills and tools I work with.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How often do you update your portfolio?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            I regularly update my portfolio with new projects and research. Follow my GitHub for 
+                            real-time updates on ongoing work and contributions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>George David</h4>
+                <p>Robotics Engineer & AI Developer</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="footer-socials">
+                    <a href="https://github.com/george-1-0-1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gd117/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:georgedavid.uk1@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 George David. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
